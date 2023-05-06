@@ -1,0 +1,28 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8" />
+    <title>Electron JSON App</title>
+    <link rel="stylesheet" href="mvp.css" />
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+<main>
+    <h1>Electron JSON App</h1>
+    <section>
+        <h2>Input</h2>
+        <label for="input"></label><textarea id="input" placeholder="Enter JSON"></textarea>
+        <button id="submit" onclick="submitInput()">Submit</button>
+    </section>
+    <section>
+        <h2>Output</h2>
+        <label for="output"></label><textarea id="output" readonly placeholder="Output"></textarea>
+        <button id="copy" onclick="copyOutput()">Copy Output</button>
+    </section>
+</main>
+<div id="toast" class="toast">Output copied to clipboard</div>
+<script src="renderer.js"></script>
+</body>
+</html>
